@@ -1,0 +1,45 @@
+Vidensdel (12 spørgsmål)
+
+1. Under "File" øverst til venstre skal man gå ind under "Add", og derefter "New Project" for at tilføje flere projekter til en eksisterende solution.
+
+2. C# filer har filendelsen .cs, og er tekstfiler der indeholder kildekode.
+
+3. Ved at højreklikke på et projekt, og gå ind under "Add", og derefter "Reference" kan man tilføje en reference til en class fra et andet projekt, og bruge det vil hjælp af "using ClassName".
+
+4. Syntaksen er som følgende:
+Ærklæring med initialisering: int myVariable = 1337;
+Ærklæring uden initialisering: int myVariable;
+
+Overskrivning af værdi: myVariable = 420;
+
+5. Til at repræsentere en persons navn vil jeg anvende datatypen string, fordi datatypen kan indeholde en serie af tegn, f.eks. et navn.
+
+6. Til at repræsentere hvor mange varer en kunde har i sin indkøbskurv, vil jeg anvende datatypen int, fordi den kan indeholde lige tal.
+
+7. En variabel indeholder en værdi, og hvilken værdi variablen kan indeholde bliver bestemt af den datatype man anvender når man erklærer variablen.  
+
+8. Resultatet på udregnelsen af værdien x er -32.
+int a = 6; 
+int b = 10; 
+int x = (a-b)*(a+b)/2
+
+9. Syntaksen er forkert da variablen i ikke bliver ærklæret ved brug af datatypen int, og – tegnet er ikke det korrekte - tegn.
+for(i = 0; i < 10; i++)
+{ 
+   i += i – 1; 
+}
+
+10. Syntaksen er forkert da datatypen string bliver initialiseret med en boolean værdi. Og operanten ! bliver brugt på en string, hvilket ikke kan lade sig gøre. Samt der ikke er anførselstegn rundt om teksten "Du indtastede noget forkert." i Console.WriteLine paranteserne.
+
+string correctInput = false; 
+if(!correctInput) 
+{ 
+   Console.Write(correctInput + Du indtastede noget forkert.); 
+}
+
+11. Syntaksen er forkert fordi datatypen int bliver initialiseret med værdien Console.ReadLine(); men datatypen int kan kun indeholde heltal.
+
+int i = Console.ReadLine(); 
+Console.WriteLine(i);
+
+12. Det er compilerens opgave at lave kildekode om til kode som computeren kan forstå, og derved afvikle. Hvorimod afviklingsmiljøet står udførelsen, og fejlfinding i kildekoden.
