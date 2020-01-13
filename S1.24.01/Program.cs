@@ -14,12 +14,11 @@ namespace S1._24._01
 
             if(FileExist(consoleInput) == true)
             {
-                // jeg er autist og skal xdø
-                Console.WriteLine("mig er en autist xdø!!!!");
+                Console.WriteLine("ok");
             }
             else
             {
-                Console.WriteLine("Fejl! Filen findes ikke. Fordi jeg autist xdø");
+                Console.WriteLine("Fejl! Filen findes ikke.");
             }
         }
 
