@@ -62,25 +62,25 @@ namespace StarTrek
         static void SecondTaskMethod()
         {
             // Opgave 2
-            string[] firstNameArray = { "S", "Sp", "Sk", "St", "T" };
-            string[] secondNameArray = { "a", "e", "i", "o", "u", "y" };
-            string[] thirdNameArray = { "q", "p", "k", "ck", "l" };
+            string[] firstArray = { "S", "Sp", "Sk", "St", "T" };
+            string[] secondArray = { "a", "e", "i", "o", "u", "y" };
+            string[] thirdArray = { "q", "p", "k", "ck", "l" };
 
 
             for(int i = 0; i != 1500; i++)
             {
                 CreateNameList();
 
-                Random firstNameRndNum = new Random();
-                int firstRandom = firstNameRndNum.Next(0, firstNameArray.Length);
+                Random firstRndNum = new Random();
+                int firstNumber = firstRndNum.Next(0, firstArray.Length);
 
-                Random secondNameRndNum = new Random();
-                int secondRandom = secondNameRndNum.Next(0, secondNameArray.Length);
+                Random secondRndNum = new Random();
+                int secondNumber = secondRndNum.Next(0, secondArray.Length);
 
-                Random thirdNameRndNum = new Random();
-                int thirdRandom = thirdNameRndNum.Next(0, thirdNameArray.Length);
+                Random thirdRndNum = new Random();
+                int thirdNumber = thirdRndNum.Next(0, thirdArray.Length);
 
-                string firstName = firstNameArray[firstRandom] + secondNameArray[secondRandom] + thirdNameArray[thirdRandom];
+                string firstName = firstArray[firstNumber] + secondArray[secondNumber] + thirdArray[thirdNumber];
 
                 if(!fileNamesList.Contains(firstName))
                 {
@@ -108,18 +108,18 @@ namespace StarTrek
                 CreateNameList();
 
                 Random firstRndNum = new Random();
-                int a = firstRndNum.Next(0, firstArray.Length);
+                int firstNumber = firstRndNum.Next(0, firstArray.Length);
 
                 Random secondRndNum = new Random();
-                int b = secondRndNum.Next(0, secondArray.Length);
-
+                int secondNumber = secondRndNum.Next(0, secondArray.Length);
+                
                 Random thirdRndNum = new Random();
-                int c = thirdRndNum.Next(0, thirdArray.Length);
+                int thirdNumber = thirdRndNum.Next(0, thirdArray.Length);
 
                 Random fourthRndNum = new Random();
-                int d = fourthRndNum.Next(0, fourthArray.Length);
+                int fourthNumber = fourthRndNum.Next(0, fourthArray.Length);
 
-                string name = firstArray[a] + secondArray[b] + thirdArray[c] + fourthArray[d];
+                string name = firstArray[firstNumber] + secondArray[secondNumber] + thirdArray[thirdNumber] + fourthArray[fourthNumber];
 
                 if(!fileNamesList.Contains(name))
                 {
@@ -159,4 +159,5 @@ namespace StarTrek
             }
         }
     }
+
 }
