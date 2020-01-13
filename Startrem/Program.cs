@@ -7,7 +7,7 @@ namespace StarTrek
 {
     class Program
     {
-        static string path = @"C:\Users\baek\Documents\startrek.txt";
+        static string path = @"C:\Users\chri37i7\Documents\startrek.txt";
         static List<string> fileNamesList = new List<string>();
 
         static void Main()
