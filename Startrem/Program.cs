@@ -31,21 +31,21 @@ namespace StarTrek
                 CreateNameList();
 
                 Random firstRndNum = new Random();
-                int a = firstRndNum.Next(0, firstArray.Length);
+                int firstNumber = firstRndNum.Next(0, firstArray.Length);
 
                 Random secondRndNum = new Random();
-                int b = secondRndNum.Next(0, secondArray.Length);
+                int secondNumber = secondRndNum.Next(0, secondArray.Length);
 
                 Random thirdRndNum = new Random();
-                int c = thirdRndNum.Next(0, thirdArray.Length);
+                int thirdNumber = thirdRndNum.Next(0, thirdArray.Length);
 
                 Random fourthRndNum = new Random();
-                int d = fourthRndNum.Next(0, fourthArray.Length);
+                int fourthNumber = fourthRndNum.Next(0, fourthArray.Length);
 
                 Random fifthRndNum = new Random();
-                int e = fifthRndNum.Next(0, fifthArray.Length);
+                int fifthNumber = fifthRndNum.Next(0, fifthArray.Length);
 
-                string name = firstArray[a] + secondArray[b] + thirdArray[c] + fourthArray[d] + fifthArray[e];
+                string name = firstArray[firstNumber] + secondArray[secondNumber] + thirdArray[thirdNumber] + fourthArray[fourthNumber] + fifthArray[fifthNumber];
 
                 if(!fileNamesList.Contains(name))
                 {
